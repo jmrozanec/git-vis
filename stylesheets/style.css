@@ -1,0 +1,15 @@
+#title {
+    text-align: center;
+}
+#heatmap {
+  width: 60%;
+  float: left;
+}
+
+#piechart {
+  margin-left: 60%;
+}
+
+#piechart2 {
+  margin-left: 60%;
+}
