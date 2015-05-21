@@ -1,2 +1,3 @@
 # git-vis
-git visualizations
+
+Visualizations about git projects. View the page at [git-vis.com](http://git-vis.com/)
