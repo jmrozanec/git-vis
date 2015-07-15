@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Twitter visualization</title>
+	<meta name="description" content="Twitter Visualizations using D3.js">
+	<meta name="author" content="Joze Rozanec  @jmrozanec">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>What's going on Twitter right now?</h1>
+	</header>
+
+	<section id="main">
+		<section id="map" class="map"></section>
+
+		<section class="tweet">
+			<blockquote class="h-entry">
+				<a class="button" role="button" title="Follow on Twitter" href="" target="_blank"><img src="images/twitter-button.png"></a>
+				<div class="header">
+					<div class="name"></div>
+					<div class="screenname"></div>
+				</div>
+				
+				<div class="text"></div>
+				<div class="timestamp"></div>
+
+				<div class="actions">
+					<a class="reply" href="" target="_blank"><i class="fa fa-reply"></i></a>
+					<a class="retweet" href="" target="_blank"><i class="fa fa-retweet"></i></a>
+					<a class="favorite" href="" target="_blank"><i class="fa fa-star"></i></a>
+				</div>
+			</blockquote>
+			<div class="emotion"></div>
+		</section>
+
+		<!--section class="legendbox">
+			<ul>
+				<li><div class="happy"></div>More positive tweets</li>
+				<li><div class="neutral"></div>Equal numbers of positive and negative tweets</li>
+				<li><div class="sad"></div>More negative tweets</li>
+			</ul>
+		</section-->
+	</section>
+
+	<input type="button" id="toggle" value="Stop me!">
+
+	<footer>
+		<p>Developed with <a href="https://twitter.com/hashtag/d3js" target="_blank">#d3js</a></p>
+	</footer>
+
+	<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>	
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
+	<script src="https://twemoji.maxcdn.com/twemoji.min.js"></script>
+	<!--
+		Taken from: https://www.npmjs.com/package/point-in-polygon
+		http://dontkry.com/posts/code/using-npm-on-the-client-side.html
+	--> 
+	<script src="js/point-in-polygon.js"></script>
+	<script src="json/argentina-provincias.topojson"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
